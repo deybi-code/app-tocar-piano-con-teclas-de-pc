@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Piano con Teclado</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; margin: 30px; }
+    .keys { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+    .key {
+      width: 70px; height: 140px; border: 2px solid #333; border-radius: 10px;
+      display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px;
+      user-select: none;
+    }
+    .active { transform: translateY(2px); opacity: 0.8; }
+    small { display:block; opacity: .7; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h1>🎹 Piano con el teclado</h1>
+  <p>Presiona: <b>A S D F G H J K</b></p>
+
+  <div class="keys" id="keys">
+    <div class="key" data-key="a">Do <small>A</small></div>
+    <div class="key" data-key="s">Re <small>S</small></div>
+    <div class="key" data-key="d">Mi <small>D</small></div>
+    <div class="key" data-key="f">Fa <small>F</small></div>
+    <div class="key" data-key="g">Sol <small>G</small></div>
+    <div class="key" data-key="h">La <small>H</small></div>
+    <div class="key" data-key="j">Si <small>J</small></div>
+    <div class="key" data-key="k">Do <small>K</small></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
